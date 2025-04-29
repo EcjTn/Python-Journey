@@ -1,4 +1,4 @@
-# Python Networking Projects (Beginner)
+# Python Beginner Projects
 
 This repository contains simple Python scripts focused on basic networking concepts such as:
 
