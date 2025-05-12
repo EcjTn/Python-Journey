@@ -81,7 +81,7 @@ def gamble(money):
                 money = money + moneyshow
                 print(f"You won ${moneyshow}!")
             else:
-                print("You lost")
+                print("You lost!")
         elif gamble_choice == 0:
             print("Bye bye...")
             exit()
