@@ -28,4 +28,4 @@ for port in range(start_port, end_port):
 
 
     except Exception as e:
-        print(e)
+        print(f"Error: {e}")
