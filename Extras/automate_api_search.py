@@ -1,20 +1,9 @@
-import os
 import requests
-import asyncio
-import threading
-import socket
-import time
-
-
-url = "https://reqres.in/api/users?" #edit this url
-
 
 def search(name):
 
-    new_url = url + name
-
-    print(f"Searching in {new_url}")
-    response = requests.get(new_url)
+    print(f"Searching in {name}")
+    response = requests.get(name)
 
     if response.status_code == 200:
         data = response.json()
