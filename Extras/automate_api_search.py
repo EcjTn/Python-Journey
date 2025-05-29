@@ -15,20 +15,3 @@ def search(name):
 
 name = input("Enter what you want to search: ")
 search(name)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
