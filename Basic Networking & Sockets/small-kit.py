@@ -6,9 +6,6 @@ import random
 from bs4 import BeautifulSoup
 import base64
 
-
-
-
 def check():
     while True:
         print(f"\nEX for Exit.")
@@ -16,8 +13,6 @@ def check():
         if IP == "EX":
             print("Quitting...")
             break
-
-
 
         PORT = int(input("Enter Port: "))
         checker(IP, PORT)
@@ -27,7 +22,6 @@ def check():
         else:
             print(f"[{IP}:{PORT}] is Offline.")
             
-###### UP and DOWN connected ######
 def checker(IP, PORT):
     try:
         client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -95,15 +89,10 @@ def htmler():
             f.write(response.text)
 
 
-
-
-
 def scraper():
 
     todofol = input("Name your Folder: ")
     todolis = input("File name(for saving): ")
-
-
 
     try:
         os.mkdir(f"{todofol}")
@@ -111,10 +100,6 @@ def scraper():
         print("That folder already exists, we will use that still.")
     finally:
         print("Finalizing...")
-
-
-
-
 
 
     letter = input("Enter your letter: ")
@@ -132,8 +117,6 @@ def scraper():
 
         with open(f"{todofol}/{todolis}.txt", "a") as ltr:
             ltr.write(f"{letter}\n")
-
-
 
 
 
@@ -199,13 +182,6 @@ def timr():
 
 
 
-
-
-
-
-
-
-
 def mycnc():
 
     pc = os.getenv('COMPUTERNAME')
@@ -213,8 +189,8 @@ def mycnc():
     print(""" 
     ********** Commands *************
 
-    1. udpflood -- starts chrome
-    2. tcp -- soon
+    1. ...
+    2. ...
 
     **********************************
     """)
